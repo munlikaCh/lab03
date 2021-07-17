@@ -4,23 +4,26 @@
     <!-- <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <EventCard v-for="event in events" :key="event.id" :event="event" />
+    <ShowCo class="shows" v-for="show in events" :key="show.id" :show="show" />
   </div>
 </template>
 <script>
 // @ is an alias to /src
 // import HelloWorld from "@/components/HelloWorld.vue";
 import EventCard from '../components/EventCard.vue'
+import ShowCo from '../components/ShowCo.vue'
 
 export default {
   name: 'Home',
   components: {
     // HelloWorld
     EventCard, //register it as a child component
+    ShowCo
   },
   data() {
     return {
       events: [
-         {
+        {
           id: 5928101,
           category: 'animal welfare',
           title: 'Cat Adoption Day',
@@ -52,10 +55,10 @@ export default {
           time: '11:00',
           petsAllowed: false,
           organizer: 'Carey Wales'
-        },
-    ],
+        }
+      ]
+    }
   }
-},
 }
 </script>
 <style scoped>
@@ -63,5 +66,10 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.shows {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 </style>
