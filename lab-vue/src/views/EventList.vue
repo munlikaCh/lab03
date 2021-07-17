@@ -1,8 +1,6 @@
 <template>
-  <!-- <div class="home"> -->
+<h1>Events For Good</h1>
   <div class="events">
-    <!-- <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <EventCard v-for="event in events" :key="event.id" :event="event" />
     <ShowCo class="shows" v-for="show in events" :key="show.id" :show="show" />
   </div>
@@ -13,8 +11,9 @@
 import EventCard from '../components/EventCard.vue'
 import ShowCo from '../components/ShowCo.vue'
 
+
 export default {
-  name: 'Home',
+  name: 'EventList',
   components: {
     // HelloWorld
     EventCard, //register it as a child component

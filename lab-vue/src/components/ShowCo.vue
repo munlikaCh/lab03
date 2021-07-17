@@ -1,7 +1,7 @@
 <template>
   <div class="show-co">
     <!-- <span>@{{ event.time }} on {{ event.date }}</span> -->
-    <h4>{{ show.category }}<br /> {{ show.organizer }}</h4>
+    <h5>{{ show.category }}<br /> {{ show.organizer }}</h5>
   </div>
 </template>
 
