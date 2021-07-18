@@ -11,7 +11,8 @@
 import EventCard from '../components/EventCard.vue'
 import ShowCo from '../components/ShowCo.vue'
 
-import axios from 'axios'
+import EventService from '../services/EventService.js'
+// import axios from 'axios'
 
 
 export default {
@@ -27,8 +28,7 @@ export default {
     }
   },
   created(){
-      axios
-      .get('http://localhost:3004/events')
+      EventService.getEvents()
       .then((response) => {
         this.events = response.data
       })
