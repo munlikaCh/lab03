@@ -10,7 +10,7 @@
 import ShowCo from '../components/ShowCo.vue'
 
 export default {
-  name: 'EventList',
+  name: 'New',
   components: {
     // HelloWorld
     // EventCard, //register it as a child component

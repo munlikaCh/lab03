@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const apiClient = axios.create({
-    baseURL: 'https://dv-student-backend-2019.appspot.com/students',
+    baseURL: 'https://dv-student-backend-2019.appspot.com/',
     withCredentials: false,
     headers:{
         Accept: 'application/json'
@@ -9,7 +9,7 @@ const apiClient = axios.create({
 })
 
 export default{
-    getEvents(){
-        return apiClient.get('/events')
+    getStudents(){
+        return apiClient.get('/students')
     }
 }

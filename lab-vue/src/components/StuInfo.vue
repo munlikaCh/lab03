@@ -11,20 +11,6 @@
 <script>
 export default {
   name: 'StuInfo',
-  //   data() {
-  //     return {
-  //       event: {
-  //         id: 5928101,
-  //         category: 'animal walfare',
-  //         title: 'Cat Adoption Day',
-  //         description: 'Find your new feline friend at this event.',
-  //         location: 'Meow Town',
-  //         date: 'January 28, 2022',
-  //         time: '12:00',
-  //         peetsAllowed: true,
-  //         organizer: 'Kat Laydee'
-  //       }
-  //     }
     props: {
         stu: {
             type: Object,
